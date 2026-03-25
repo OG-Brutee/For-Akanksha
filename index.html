@@ -482,7 +482,14 @@
 -->
 <audio id="bgMusic" loop preload="auto">
   <source src="Music.mp3" type="audio/mpeg">
-</audio>
+</audio> 
+  script>
+  document.addEventListener("click", () => {
+    const audio = document.getElementById("bgm");
+    audio.muted = false;
+    audio.play();
+  });
+</script>
 
 <!-- ===========================
      LANDING SCREEN
